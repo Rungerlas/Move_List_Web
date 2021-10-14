@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.header-container {
+  color: #fff;
+  background-color: #3f51b5;
+  width: 100%;
+  display: flex;
+  z-index: 1100;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-direction: column;
+  box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+    0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.header-bar {
+  min-height: 64px;
+  padding: 0 24px;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.header-logo-container {
+  width: 100px;
+  padding: 8px;
+}
+
+.header-menu-container {
+  flex-grow: 1;
+  display: flex;
+}
+
+.header-menu-item {
+  margin: 0 20px;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+.header-menu-link {
+  text-decoration: none;
+  color: white;
+}
+
+.movie-box-container {
+  padding: 0 40px;
+}
+
+.movie-box-display-area {
+  display: grid;
+  gap: 32px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.movie-box-display-area * {
+  text-align: center;
+}
+
+.movie-box-page-area {
+  display: grid;
+  margin: 24px 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.movie-box-page-container {
+  width: 100%;
+  grid-column: 2 / 3;
+}
+
+.movie-box-page {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.movie-box-page-button {
+  color: #3f51b5;
+  border: 1px solid rgba(63, 81, 181, 0.5);
+  background-color: transparent;
+  line-height: 1.75;
+  padding: 5px 15px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.movie-box-page-category-area {
+  display: flex;
+  grid-column: 3 / 4;
+  flex-direction: row-reverse;
+}
+
+.movie-box-page-category-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-box-page-category-label {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.category-select {
+  border: transparent;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.movie-card-action-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.movie-card-icon-container {
+  display: flex;
+  align-items: center;
+}
+
+.movie-card-icon-container-favorite {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.login-container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.movie-details-area {
+  display: flex;
+  padding: 40px;
+  align-items: center;
+  margin-left: 128px;
+  margin-right: 128px;
+  justify-content: center;
+}
+
+.movie-details-container {
+  display: flex;
+}
+
+.movie-details-description-container {
+  margin: 5px;
+}
+
+.movie-details-title {
+  font-size: 3rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.167;
+  letter-spacing: 0em;
+}
+
+.movie-details-sub-title {
+  font-size: 1.25rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.0075em;
+}
+
+.movie-details-genre-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.movie-details-genre {
+  height: 2em;
+  background-color: darkturquoise;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  padding: 5px;
+}
+
+.movie-average-rating {
+  display: flex;
+  align-items: center;
+}
+
+.movie-logo-container {
+  height: 50px;
+  width: 50px;
+  display: flex;
+}
